@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Cinema</title>
+</head>
+<body>
+    <!-- Encabezado, trae información más básica y que se repite en toda la página -->
+    <header>
+        <div class="logotipo">
+            <img src="./img/logo.png" alt="imagen logo" class="logo">
+            <h1 class="tipo">Cinema+</h1>
+        </div>
+        <form class="busqueda">
+            <input type="text" class="pelicula" placeholder="Buscar película">
+            <button type="submit" class="buscar">Buscar</button>
+        </form>
+        <button class="ingresar">Ingresar</button>
+    </header>
+    <!-- Barra de navegación puede cambiar dependiendo de donde se encuentre el usuario -->
+    
+    <h1 id="titular_principal">Bienvenido a Cinema+ tu fuente de entretenimiento</h1>
+    <div class="contenedor">
+        <nav>
+            <ul class="menu">
+                <li>Cartelera</li>
+                <li>Estrenos</li>
+                <li>Calificaciones</li>
+                <li>Preventa</li>
+                <li>Categorías</li>
+            </ul>
+        </nav>
+        <!-- Contenido principal de la página -->
+        <main>
+            <section class="superior"> <!-- Una sección va dentro de nuestro contenido principal y es una forma de dividir información sin usar divs, funciona de la misma manera y se comporta como un bloque -->
+                <img src="./img/cartelera.jpg" alt="Imagen cartelera" id="cartelera">
+                <div>
+                    <img src="./img/people-applauding-film.jpg" alt="Personas aplaudiendo en el cine" class="img_derecha">
+                    <h2 id="titulo_cartelera">CARTELERA</h2>
+                </div>
+            </section>
+            <section class="inferior">
+                <div class="info_cine">
+                    <img src="./img/sala.jpg" alt="Imagen sala de cine">
+                    <p>Nuestras salas</p>
+                </div>
+                <div class="info_cine">
+                    <img src="./img/dulces.jpg" alt="Imagen dulces">
+                    <p>Dulcería</p>
+                </div>
+                <div class="info_cine">
+                    <img src="./img/vip.jpg" alt="Imagen lounge VIP">
+                    <p>VIP</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="cookies">
+        <img src="./img/cookie.png" alt="Icono galleta">
+        <p>¿Acepta el uso de sus datos para mostrar publicidad en la página?</p>
+        <button class="aceptar" onclick="eliminarCookies()">Acepto</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

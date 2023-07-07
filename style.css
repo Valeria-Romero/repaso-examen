@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
+
+/* Inicia el header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+}
+
+.logotipo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ingresar{
+    background-color: rgb(2, 109, 209);
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.busqueda{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.buscar, .pelicula{
+    padding: 10px 25px;
+    border: none;
+}
+
+.buscar{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
+.pelicula{
+    width: 100%;
+}
+
+/* Contenedor */
+.contenedor{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+/* Inicia la barra de navegación */
+
+nav{
+    background-color: rgb(47, 47, 46);
+    padding: 30px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    list-style: none;
+    gap: 50px;
+}
+
+.menu li:hover{
+    cursor: pointer;
+}
+
+/* Titular */
+#titular_principal{
+    margin: 20px 10%;
+}
+
+
+/* Inicio seccion superior */
+.superior{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    gap: 30px;
+}
+
+#cartelera{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_derecha{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#titulo_cartelera{
+    background-color: blueviolet;
+    padding: 30px;
+    text-align: center;
+}
+
+.superior div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+
+/* Inicio seccion inferior */
+.inferior{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.inferior img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.info_cine p{
+    text-align: center;
+    font-size: larger;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Cookies */
+
+.cookies img{
+    width: 70px;
+}
+
+.cookies{
+    width: 80%;
+    height: 100px;
+    background-color: rgb(203, 177, 7);
+    color: black;
+    font-size: larger;
+    border: 5px solid rgb(2, 2, 55);
+    position: fixed;
+    left: 10%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aceptar{
+    padding: 10px 30px;
+    background-color: rgb(191, 78, 2);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
